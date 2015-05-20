@@ -148,10 +148,8 @@ public class DialpadView extends LinearLayout {
                 R.string.dialpad_6_2_letters, R.string.dialpad_7_2_letters,
                 R.string.dialpad_8_2_letters, R.string.dialpad_9_2_letters,
                 R.string.dialpad_star_2_letters, R.string.dialpad_pound_2_letters};
-
-        Locale t9SearchInputLocale = SettingsUtil.getT9SearchInputLocale(getContext());
-        final Resources resources = getResourcesForLocale(t9SearchInputLocale);
-
+                
+        final Resources resources = getContext().getResources();
         DialpadKeyButton dialpadKey;
         TextView numberView;
         TextView lettersView;
